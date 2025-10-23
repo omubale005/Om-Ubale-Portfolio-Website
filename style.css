@@ -741,16 +741,18 @@ nav ul li a:hover::after{
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #0087ff;
+    background-color: #0087ff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
     transition: background 0.5s;  
     margin-bottom: 150px;
+    border-radius: 50px;
 }
 
 .btn00:hover{
-    background:#0087ff;
+    background:#006ed6;
 }
 
 /*--------------------------------Contact-------------------------*/
@@ -852,6 +854,11 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #0087ff;
     margin-top: 10px;
+    border-radius: 50px;
+}
+
+.btn.btn2:hover{
+    background: #006ed6;
 }
 
 .contact-right form{
@@ -1894,4 +1901,45 @@ nav .fa-solid {
 .fade-right.visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* === FIX: Contact-left click & hover issue === */
+.contact-left {
+  position: relative;
+  z-index: 10;           /* make it appear above footer */
+  pointer-events: auto;  /* ensure it can be clicked */
+}
+
+.contact-left .social-icons a,
+.contact-left .btn {
+  pointer-events: auto;
+}
+
+.contact-left .btn {
+  background: #0087ff;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.contact-left .btn:hover {
+  background: #006ed6;
+}
+
+/* Keep both left and right columns aligned */
+#contact .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-left,
+  .contact-right {
+    text-align: center;
+  }
 }
