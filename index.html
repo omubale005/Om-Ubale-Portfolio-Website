@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal projects Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da5e734491.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo5.png" class="logo" alt="Om Ubale Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                     <li><a href="#certificates">Certification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi! I'm <span class="typing"></span></h1>
+                <p>A passionate frontend web developer and an aspiring full-stack developer.</p>
+                <p>“<span>I like my websites like my espresso - strong, smooth, and no bugs.</span>”</p>
+            </div>
+        </div>
+    </div>
+<!-----------------------------about------------------------->
+    <div id="about" class="fade-in-left">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="images/user2.png">
+                </div>
+                <div class="about-col-2">
+                        <h3 class="sub-title"><span class="h3-hover-text">About Me</span></h3>
+                    <p>
+                    <br>
+                    <span>I'm a third-year Computer Science Engineering student with a deep passion for building
+                    clean, interactive, and user-friendly web experiences.Along the way, I’ve fallen in love
+                    with designing user-friendly interfaces and now slowly diving into the backend world to
+                    become a full stack web developer.From crafting pixel-perfect UIs with HTML, CSS, and JavaScript . I enjoy building stuff
+                    from scratch, experimenting with new tech, and constantly learning how to make things
+                    better — faster, smoother, and cooler.</span>
+                    </p>
+                    <p>
+                    <span>One of the most exciting parts of my journey so far has been being part of the Google
+                    Developer Student Club (GDSC) at my college. It gave me a chance to collaborate with
+                    like-minded developers, attend hands-on workshops, and explore real-world
+                    development practices. Being surrounded by passionate tech enthusiasts really pushed
+                    me to improve, stay curious, and build with purpose</span>
+                    </p>
+                    <p>
+                    <span>Take a look around — check out my projects, get to know my journey, and feel free to
+                    reach out if you’d like to chat or collaborate!</span>
+                    </p> 
+                    <!--
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Development</span><br>HTML, CSS, JAVASCRIPT</li>
+                            <li><span>Programming Languages</span><br>C, Python, Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team Lead at Starapp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Desigmn Executive at Coin Digital Ltd.</li>
+                             <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Banglore</li>
+                            <li><span>2014</span><br>BBA from ISM Banglore</li>
+                        </ul>
+                    </div>
+                -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------------------skills--------------------------->
+<div id="skills" class="fade-in-right"> 
+    <h1 class="section-title">My Skills</h1>
+    <p class="sub-head">A comprehensive overview of my technical abilities and soft skills</p>
+        
+    <div class="skills-container ">
+        <div class="skills-group">
+            <h3 class="skills-title">Frontend</h3>
+
+            <div class="skills-items">
+                <div class="skills-data html stagger">
+                        <div class="skills-blob html">
+                            <img src="images/html-logo3.svg" alt="" class="skills-img html">
+                        </div>
+
+                        <h3 class="skills-name">HTML</h3>
+                        <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+
+                <div class="skills-data css stagger">
+                    <div class="skills-blob css">
+                        <img src="images/css-logo.svg" alt="" class="skills-img css">
+                    </div>
+
+                    <h3 class="skills-name">CSS</h3>
+                    <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+
+                <div class="skills-data js stagger">
+                    <div class="skills-blob js">
+                        <img src="images/javascript.png" alt="" class="skills-img">
+                    </div>
+
+                    <h3 class="skills-name">JavaScript</h3>
+                    <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+
+                <div class="skills-data react stagger">
+                    <div class="skills-blob react">
+                        <img src="images/react-logo.svg" alt="" class="skills-img">
+                    </div>
+
+                    <h3 class="skills-name">React</h3>
+                    <span class="skills-level"></span>
+                </div>
+
+                <div class="skills-data tailwind stagger">
+                    <div class="skills-blob tailwind">
+                        <img src="images/tailwind-css-logo.svg" alt="" class="skills-img">
+                    </div>
+
+                    <h3 class="skills-name">Tailwind</h3>
+                    <span class="skills-level"></span>
+                </div>    
+            </div>   
+        </div>
+
+        <div class="skills-group languages">
+            <h3 class="skills-title">Languages</h3>
+
+            <div class="skills-items languages">
+                <div class="skills-data c stagger">
+                        <div class="skills-blob c">
+                            <img src="images/c language.svg" alt="" class="skills-img">
+                        </div>
+
+                        <h3 class="skills-name">C</h3>
+                        <!--<span class="skills-level">Advanced</span>-->
+                </div>
+
+                <div class="skills-data python stagger">
+                    <div class="skills-blob python">
+                        <img src="images/python logo.svg" alt="" class="skills-img python">
+                    </div>
+
+                    <h3 class="skills-name">Python</h3>
+                    <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+            </div>
+        </div>    
+        
+        <div class="skills-group">
+            <h3 class="skills-title">Web Designing</h3>
+
+            <div class="skills-items">
+                <div class="skills-data figma stagger">
+                        <div class="skills-blob figma">
+                            <img src="images/figma-logo.svg" alt="" class="skills-img figma">
+                        </div>
+
+                        <h3 class="skills-name">Figma</h3>
+                    </div>
+
+                <!--<div class="skills-data sketch stagger">
+                    <div class="skills-blob sketch">
+                        <img src="images/sketch-logo.svg" alt="" class="skills-img">
+                    </div>
+
+                    <h3 class="skills-name">Sketch</h3>
+                </div>-->
+
+                <div class="skills-data adobe stagger">
+                    <div class="skills-blob adobe">
+                        <img src="images/adobe-xd-logo.svg" alt="" class="skills-img adobe">
+                    </div>
+
+                    <h3 class="skills-name">AdobeXD</h3>
+                </div>
+
+                <!--<div class="skills-data photoshop stagger">
+                    <div class="skills-blob photoshop">
+                        <img src="images/adobe-photoshop-logo.svg" alt="" class="skills-img">
+                    </div>
+
+                    <h3 class="skills-name">Photoshop</h3>
+                </div>-->
+
+                <div class="skills-data invision stagger">
+                    <div class="skills-blob invision">
+                        <img src="images/invision-logo.svg" alt="" class="skills-img">
+                    </div>
+
+                    <h3 class="skills-name">InvisionApp</h3>
+                </div> 
+                
+                <div class="skills-data canva stagger">
+                    <div class="skills-blob canva">
+                        <img src="images/canva-removebg-preview.png" alt="" class="skills-img canva">
+                    </div>
+
+                    <h3 class="skills-name">Canva</h3>
+                </div> 
+
+            </div>   
+        </div>
+
+        <div class="skills-group">
+            <h3 class="skills-title">Backend</h3>
+
+            <div class="skills-items">
+                <div class="skills-data nodeJs stagger">
+                        <div class="skills-blob nodejs">
+                            <img src="images/nodejs.svg" alt="" class="skills-img nodejs">
+                        </div>
+
+                        <h3 class="skills-name">NodeJs</h3>
+                        <!--<span class="skills-level">Basic</span>-->
+                </div>
+
+                <div class="skills-data expressjs stagger">
+                    <div class="skills-blob expressjs">
+                        <img src="images/expressjs.svg" alt="" class="skills-img expressjs">
+                    </div>
+
+                    <h3 class="skills-name">ExpressJS</h3>
+                    <!--<span class="skills-level">Basic</span>-->
+                </div>
+
+                <div class="skills-data mongodb stagger">
+                    <div class="skills-blob mongodb">
+                        <img src="images/mongodb.svg" alt="" class="skills-img mongodb">
+                    </div>
+
+                    <h3 class="skills-name">MongoDB</h3>
+                    <!--<span class="skills-level">Basic</span>-->
+                </div>    
+            </div>   
+        </div>
+
+        <div class="skills-group foundational">
+            <h3 class="skills-title">Foundational</h3>
+
+            <div class="skills-items foundational">
+                <div class="skills-data dbms stagger">
+                        <div class="skills-blob dbms">
+                            <img src="images/DBMS.svg" alt="" class="skills-img dbms">
+                        </div>
+
+                        <h3 class="skills-name">DBMS</h3>
+                        <!--<span class="skills-level">Advanced</span>-->
+                </div>
+
+                <div class="skills-data aoa stagger">
+                    <div class="skills-blob aoa">
+                        <img src="images/AOA.svg" alt="" class="skills-img aoa">
+                    </div>
+
+                    <h3 class="skills-name">AOA</h3>
+                    <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+
+                <div class="skills-data os stagger">
+                    <div class="skills-blob os">
+                        <img src="images/Operating Systems.svg" alt="" class="skills-img os">
+                    </div>
+
+                    <h3 class="skills-name">OS</h3>
+                    <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+
+                <div class="skills-data data-structure stagger">
+                    <div class="skills-blob data-structure">
+                        <img src="images/datastructure.svg" alt="" class="skills-img data-structure">
+                    </div>
+
+                    <h3 class="skills-name">Data Structure</h3>
+                    <!--<span class="skills-level">Intermediate</span>-->
+                </div>
+            </div>
+        </div>
+        
+    </div>   
+</div>
+
+ <!---------------------------Projects--------------------------->   
+    <div id="projects" class="fade-in">
+        <div class="container">
+            <h1 class="section-title work00">My Projects</h1>
+            <p class="sub-head2">Showcasing real-world solutions which combines technical innovation.</p>
+            <div class="worklist">
+                <div class="work stagger">
+                    <img src="images/amazon2.png">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p> Responsive Amazon website, replicating core UI elements, focused on pixel-perfect design, layout 
+consistency, and cross-device compatibility.</p>
+                        <a href="https://amazon-clone-by-omubale.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work stagger">
+                    <img src="images/vision2.4.1.png">
+                    <div class="layer">
+                        <h3>Vision: Personal AI Assistant</h3>
+                        <p> Voice operative AI which performs tasks like opening websites, playing music, telling weather, conducting searches on Wikipedia, Google, work as a translator and many more functions.</p>
+                        <a href="https://www.linkedin.com/posts/omubale005_hey-connections-are-you-tired-activity-7248057314375532545-vfg7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEzAItYBhQPEpf0hbQnCqjV01NtPwULUwZQ"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work stagger">
+                    <img src="images/typetest2.1.jpg">
+                    <div class="layer">
+                        <h3>TypeTest</h3>
+                        <p>Type Speed Test web application featuring real-time WPM calculation, accuracy tracking, and error highlighting with   customizable test durations. </p>
+                        <a href="https://omubale005.github.io/TypeTest---Check-Your-Typing-Speed/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work stagger">
+                    <img src="images/mindspace.png">
+                    <div class="layer">
+                        <h3>MindSpace</h3>
+                        <p> Notes App enabling users to create, edit, delete, and organize notes efficiently. Integrated search, tagging, and cloud synchronization for seamless access across devices, with a responsive and user-friendly interface. </p>
+                        <a href="https://omubale005.github.io/MindSpace--Store-your-thoughts-and-ideas-in-style/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work stagger">
+                    <img src="images/ayursutra5.png">
+                    <div class="layer">
+                        <h3>Ayursutra</h3>
+                        <p>Automated therapy scheduling, notification realtime therapy tracking, automated alerts and reminders to patients. </p>
+                        <a href="https://ayur-sutra-prototype.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>                
+                    </div>
+                </div>
+                <div class="work stagger">
+                    <img src="images/visionsearch3.png">
+                    <div class="layer">
+                        <h3>VisionSearch</h3>
+                        <p>Authorities owned AI CCTV surveillance software to detect missing persons.</p>
+                        <a href="https://github.com/omubale005/VisionSearch2---dark-theme"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <!--<div class="work restro stagger">
+                        <img src="images/restro3.1.png">
+                        <div class="layer">
+                            <h3>Amazon Clone</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eum?</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>-->
+            </div>  
+        </div>
+    </div>
+
+    <!------------------------Certificates-------------------------->
+    <div id="certificates" class="fade-in">
+        <div class="container">
+            <h1 class="section-title work00">Certificates</h1>
+            <div class="worklist">
+                <div class="work stagger">
+                    <img src="images/GDGC .jpg">
+                </div>
+                <div class="work stagger">
+                    <img src="images/Python Crash Course Coursera.jpg">
+                </div>
+                <div class="work stagger">
+                    <img src="images/SCALAR.png">
+                </div>
+        </div>
+        <a href="#contact" class="btn00">Want to collaborate?</a>
+    </div>
+
+    <!---------------------------Contact---------------------------->
+    
+    <div id="contact" class="fade-in">
+        <h1 class="sub-title2">Let's Connect</h1>
+        <p class="sub-head">I'm always excited to discuss new opportunities and collaborate on projects.</p>
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <p class="text07">Share your thoughts, ideas & queries</p>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="14" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <div class="student"><img src="images/student.png" ></div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i>omubaleofficial@gmail.com</p>
+                    <p class="text06"><i class="fa-solid fa-phone"></i>7219414848</p>
+                    <div class="social-icons">
+                        <a href="https://github.com">.<i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/OmUbale266588">.<i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/om_ubale005/">.<i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/omubale005/">.<i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!--Add other internships apps links of your profile-->
+                    <a href="images/Om Ubale Resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+    <div class="copyright">
+        <p>copyright © 2025 Om Ubale. Designed & built with passion for meaningful connections.</p>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+
+<!------------------------------------ JAVASCRIPT ---------------------------------------->
+
+<script>
+    window.addEventListener('scroll', function () {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 100) {
+            nav.classList.add('shrink');
+        } else {
+            nav.classList.remove('shrink');
+        }
+    });
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwPhuUb_KJymqWZYfGfnqviH8ZY4MwAxJ7u0XD5XtXPNRgaJVP-JBFX5-u2XX-BJ6wRHw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<!-- Typed.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script>
+  const header = document.getElementById("header");
+
+  // Backgrounds for each text
+  const backgrounds = [
+    "images/background1.jpg", // for "Om Ubale" (Index 0)
+    "images/background5.jpg"  // for "a Software Engineer" (Index 2)
+  ];
+
+  // 1. Set the initial background immediately on script load. (Crucial for first load)
+  header.style.backgroundImage = `url(${backgrounds[0]})`; 
+
+  const typed = new Typed(".typing", {
+    strings: ["Om Ubale","a Software Engineer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+    startDelay: 500,
+
+    // 2. Use preStringTyped to handle the transition for ALL strings.
+    // This fires immediately before the string starts typing, guaranteeing 
+    // the correct background is in place for the whole typing/display duration.
+    preStringTyped: function (arrayPos, self) {
+        // arrayPos 0: sets backgrounds[0] 
+        // arrayPos 1: sets backgrounds[1]
+        // arrayPos 2: sets backgrounds[2] (This ensures the 3rd image appears *before* typing)
+        header.style.backgroundImage = `url(${backgrounds[arrayPos]})`;
+    },
+    
+    // 3. Remove onStringTyped and onLastStringBackspaced for a cleaner loop.
+    // The loop handles the cycle back to index 0, and preStringTyped will set 
+    // the background[0] when it starts typing "Om Ubale" again.
+  });
+</script>
+
+</body>
+</html>
