@@ -790,6 +790,16 @@ nav ul li a:hover::after{
     font-size: 18px;
     
 }
+
+@media {
+    .sub-head {
+        text-align: left;
+    }
+    .sub-head2 {
+        text-align: left;
+    }
+}
+
 .sub-title2:hover {
    transform: scale(1.1);  /* Slight zoom on hover */
 }
@@ -1943,3 +1953,4 @@ nav .fa-solid {
     text-align: center;
   }
 }
+
