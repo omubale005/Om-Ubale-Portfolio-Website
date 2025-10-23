@@ -44,18 +44,20 @@
                     <p>
                     <br>
                     <span>I'm a third-year Computer Science Engineering student with a deep passion for building
-                    clean, interactive, and user-friendly web experiences.Along the way, I’ve fallen in love
-                    with designing user-friendly interfaces and now slowly diving into the backend world to
-                    become a full stack web developer.From crafting pixel-perfect UIs with HTML, CSS, and JavaScript . I enjoy building stuff
+                    clean, interactive, and user-friendly web experiences. From crafting pixel-perfect UIs and code I enjoy building stuff
                     from scratch, experimenting with new tech, and constantly learning how to make things
                     better — faster, smoother, and cooler.</span>
                     </p>
                     <p>
-                    <span>One of the most exciting parts of my journey so far has been being part of the Google
-                    Developer Student Club (GDSC) at my college. It gave me a chance to collaborate with
+                    <span>One of the most exciting parts of my journey so far has been being part of the Google Developers Group on Campus (GDGC) at my college. It gave me a chance to collaborate with
                     like-minded developers, attend hands-on workshops, and explore real-world
                     development practices. Being surrounded by passionate tech enthusiasts really pushed
                     me to improve, stay curious, and build with purpose</span>
+                    </p>
+                    <p>
+                    <span>
+                        As the Team Leader for my team in Smart India Hackathon 2025, I’m leading the development of innovative, technology-driven solutions to real-world challenges while fostering creativity, collaboration, and effective problem-solving.
+                    </span>
                     </p>
                     <p>
                     <span>Take a look around — check out my projects, get to know my journey, and feel free to
@@ -426,10 +428,48 @@ consistency, and cross-device compatibility.</p>
                     </div>
                     <!--Add other internships apps links of your profile-->
                     <a href="images/Om Ubale Resume.pdf" class="btn btn2">Download CV</a>
-            </div>
-    <div class="copyright">
-        <p>copyright © 2025 Om Ubale. Designed & built with passion for meaningful connections.</p>
     </div>
+    <!-- ------------------- Footer Section ------------------- -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About Column -->
+    <div class="footer-col about">
+      <h3>Om Ubale</h3>
+      <p>
+        Frontend Developer passionate about creating meaningful solutions and building
+        connections through technology.
+      </p>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-col links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Connect Column -->
+    <div class="footer-col connect">
+      <h4>Connect With Me</h4>
+      <div class="footer-socials">
+        <a href="https://github.com">.<i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/OmUbale266588">.<i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/om_ubale005/">.<i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/omubale005/">.<i class="fa-brands fa-linkedin"></i></a>      </div>
+      <a href="#header" class="back-to-top">↑ Back to top</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <span>Om Ubale</span>. Designed & built with passion
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -507,7 +547,7 @@ consistency, and cross-device compatibility.</p>
   header.style.backgroundImage = `url(${backgrounds[0]})`; 
 
   const typed = new Typed(".typing", {
-    strings: ["Om Ubale","a Software Engineer"],
+    strings: ["Om Ubale","a Computer Engineer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -523,9 +563,45 @@ consistency, and cross-device compatibility.</p>
         header.style.backgroundImage = `url(${backgrounds[arrayPos]})`;
     },
     
+    
     // 3. Remove onStringTyped and onLastStringBackspaced for a cleaner loop.
     // The loop handles the cycle back to index 0, and preStringTyped will set 
     // the background[0] when it starts typing "Om Ubale" again.
+  });
+</script>
+
+<script>
+  // === Unified Scroll Animation Observer ===
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 250);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  // Fade-up for main cards & sections
+  document.querySelectorAll(`
+    #projects .work,
+    #certificates .work,
+    #skills .skills-data,
+    #about,
+    #contact
+  `).forEach((el) => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+  });
+
+  // Fade-left for About image (user photo)
+  document.querySelectorAll('#about .about-col-1 img').forEach((el) => {
+    el.classList.add('fade-left');
+    observer.observe(el);
+  });
+
+  // Fade-right for Contact image (student photo)
+  document.querySelectorAll('#contact .student img').forEach((el) => {
+    el.classList.add('fade-right');
+    observer.observe(el);
   });
 </script>
 
